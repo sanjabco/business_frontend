@@ -1,0 +1,6 @@
+﻿services:
+  business:
+    image: registry.barazman.dev/sanjab/business-panel:latest
+    restart: unless-stopped
+    ports:
+      - 38003:80

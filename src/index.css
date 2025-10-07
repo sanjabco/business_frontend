@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 100%;
+    font-family: "B Yekan", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 0;
+    background: theme("colors.lightWhite") !important;
+}
+
+#root {
+    height: 100%;
+}
+
+.IsActive {
+    /* margin-right: 1.25rem; */
+    /* margin-left: 1.25rem; */
+    background-color: theme("colors.lightRed");
+    color: theme("colors.Orange");
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.IsNotActive {
+    /* margin-right: 1.25rem; */
+    /* margin-left: 1.25rem; */
+    /* color: theme("colors.Gray"); */
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.IsNotActive:hover {
+    background-color: theme("colors.lightGray");
+}
+
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
